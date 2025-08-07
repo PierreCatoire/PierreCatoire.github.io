@@ -2,29 +2,90 @@
 <html lang=fr>
 	<head>
 	<meta charset="utf_8">
+
+<! -- Titre  -->
 	<title> 
 	Pierre Catoire 
 	</title>
+	
+
+<! -- Feuille de style en css -->
+	<style type="text/css">
+  	body {
+	padding-left: 11em;
+    	color: black	;
+    	background-color: white}
+	h1 {
+    		font-family: Helvetica, Geneva, Arial,
+          	SunSans-Regular, sans-serif }
+	h2 {
+    		font-family: Helvetica, Geneva, Arial,
+          	SunSans-Regular, sans-serif }
+	h3 {
+    		font-family: Helvetica, Geneva, Arial,
+          	SunSans-Regular, sans-serif }
+
+	ul.navbar {
+	list-style-type: none;
+    		padding: 0;
+    		margin: 0;
+    		position: absolute;
+    		top: 2em;
+    		left: 1em;
+    		width: 9em }
+	ul.navbar li {
+    		background: white;
+    		margin: 0.5em 0;
+    		padding: 0.3em;
+    		border-right: 1em solid black }
+  		ul.navbar a {
+    		text-decoration: none }
+  		a:link {
+    		color: blue }
+  		a:visited {
+    		color: purple }
+	address {
+    		margin-top: 1em;
+    		padding-top: 1em;
+    		border-top: thin dotted }
+  	</style>
+	
 	</head>
 	<body>
-	<h1> Pierre Catoire </h1>
+
+<! -- Barre de navigation -->
+<ul class="navbar"> 
+<li> <a href="#Accueil"> Accueil </a></li>
+<li> <a href="#Recherche"> Recherche </a></li>
+<li> <a href="#enseignement"> Enseignement </a> </li>
+<li> <a href="#echecs"> Documents échiquéens</a> </li>
+</ul>
+
+<! -- Contenu principal -->
+	<h1 id="Accueil"> Pierre Catoire </h1>
 	<p><img src="Photo.png" alt="Pierre Catoire" style="height:200px; width:150px; float:right"></p>
 	<p> Bienvenue sur ma page personnelle, vous pourrez y trouver les dernières nouvelles fraîches me concernant !  </p>
-	<p> Je suis actuellement ATER à l'université d'Artois et j'enseigne en BUT informatique à l'IUT de Lens. Je suis actuellement membre associé du 	<a href="http://lml.univ-artois.fr/public/index.html" target="_blank">laboratoire de mathématiques de Lens</a> pour ma recherche en mathématiques.
+	<p> Je suis actuellement ATER à l'université d'Artois et j'enseigne en BUT informatique à Lens. 
+A partir du premier septembre 2025, je serai à l'université de Montpellier et j'enseigneai à la faculté de Mathématiques. Je ferai notamment partie de l'<a href="https://imag.umontpellier.fr/">Institut Montpeliérain Alexander Grothendieck </a>.
 <br>
- J'ai une thèse de doctorat en <em>mathématiques</em> effectuée à l'<a href="https://www.univ-littoral.fr/" target="_blank">Université du Littoral Côte d'Opale </a> au <a href="https://lmpa.univ-littoral.fr/">laboratoire de mathématiques pures et appliquées Joseph Liouville</a>.<br> J'enseigne en première année de licence.<br>
+ J'ai une thèse de doctorat en <em>mathématiques</em> effectuée à l'<a href="https://www.univ-littoral.fr/" target="_blank">Université du Littoral Côte d'Opale </a> au <a href="https://lmpa.univ-littoral.fr/">laboratoire de mathématiques pures et appliquées Joseph Liouville</a>.<br> 
 	Je suis titulaire de l'agrégation de mathématiques en 2020.<br>
 	Je suis également joueur d'<em>échecs</em> amateurs dans des opens et lors de matchs de compétitions nationale avec le club de Calais. De plus, nous organisons la première édition de l'<a href="https://calaispassionechecs.fr/?p=366" target="_blank">open de Calais</a> cette année 2025.<br> 
 	Voici un <a href="#echecs">lien </a> pour aller directement à la partie échiquéenne.<br>
 	Pour les étudiants suivre le <a href="#enseignement">lien</a> suivant. 
+
+
+Si vous souhaitez m'écrire pour parler de mathématiques, vous pouvez me contacter à l'adresse suivante: catoire_research@proton.me
+(J'en ai eu assez des changements de boîtes de mail et j'ai opté pour celle-ci qui sera plus pérenne).
 	  </p>
 	<p> Vous pouvez télécharger mon CV <a href="CVaca.pdf" target="_blank">ici.</a> </p>
-	<h2> Activités de recherche mathématiques </h2>
+	<h2 id="Recherche"> Activités de recherche mathématiques </h2>
 	<p>
 	Mes travaux de recherche en mathématiques portent sur l'algèbre combinatoire à l'intersection de la combinatoire et de l'algèbre. <br> 
 	Plus précisément, je travaille sur les <em>algèbres de Hopf combinatoire</em> et leurs éventuelles applications dans d'autres domaines des mathématiques incluant la géométrie différentielle, la physique quantique et la théorie des probabilités libres.
 <br>
 Généralement, j'essaie de faire des mathématiques qui ont des applications concrètes dans d'autres domaines des mathématiques. Cela produit de plus beaux résultats. Bien sûr, les aspects théoriques sont aussi très importants !
+
 
 	</p>
 	<h3> Thèmes de recherches </h3>
@@ -38,7 +99,7 @@ J'y étudie plusieurs structures d'algèbres de Hopf apparaissant dans d'autres 
 <ol>
 <li> les algèbres tridendriformes libres décrite à l'aide des arbres de Schroeder; </li>
 <li> les structures de bigèbres doubles pour des matrices et matroïdes;</li>
-<li> les algèbres Post-Hopf apparaissant dans le cadre de la géométrie différentielles.</li>
+<li> les algèbres Post-Hopf apparaissant dans le cadre de la géométrie différentielle.</li>
 </ol>
 <br>
 	Voici, jusqu'à ce jour la liste des documents disponible en ligne sur Hal et ArXiV:
@@ -58,13 +119,15 @@ Je travaille actuellement sur:
  des liens entre mes travaux et les <a href="https://en.wikipedia.org/wiki/Multiple_zeta_function" target="_blank">fonctions mutlizétas </a> avec Pierre Clavier et Douglas Modesto à l'université de Haute Alsace. Le but est de trouver des éléments permettant de nous mettre sur la voie d'un produit associatif sur les arbres qui est un morphisme pour les fonctions multizétas arborifiées.
 </li>
 <li> sur des moyens de faire des calculs pratiques dans les algèbres tridendriformes libres par des moyens informatiques. Pour cela, je collabore avec Jean Fromentin au laboratoire de mathématiques de l'université du littoral côte d'opale. </li>
+<li> sur l'apparition de notions algébriques dans le cadre de l'analyse numérique et géométrie différentielle avec Léopold Trémant au laboratoire de mathématiques de Lens et Abrien Busnot-Laurent à l'<a href="https://irmar.univ-rennes.fr/" target="_blank">IRMAR</a> de Rennes. </li>
+<li> des sujets restés ouverts dans ma thèse comme les algèbres Post-Hopf et la recherche de structure de bigèbre double sur les matroïdes. </li>
 </ul>
 
 	<h2 id=enseignement> Enseignement </h2>
 	<p> J'enseigne actuellement à l'IUT de Lens au département informatique aux étudiants en première et deuxième année de BUT informatique. Voici les cours que j'ai enseigné avec des documents de cours, travaux dirigés et travaux pratiques en Python en utilisant un notebook comme Jupyter:
 <ul>
 
-<li>Cryptographie: <a href="main_crypto.pdf" target="_blank">Polycopié de cours</a> ainsi que les fichiers de TP:
+<li>Cryptographie (en coopération avec Léopold Trémant): <a href="main_crypto.pdf" target="_blank">Polycopié de cours</a> ainsi que les fichiers de TP:
 	<ul>
 	<li><a href="TP1.ipynb" target="_blank">TP1</a> de remise en jambe et de manipulation de fonctions arithmétiques de bases. </li>
 	<li><a href="TP2.ipynb" target="_blank">TP2</a> de présentation et codage des chiffrements de Vigenère et César en utilisant l'arithmétique modulaire.</li>
@@ -98,10 +161,10 @@ Si vous souhaitez avoir plus de détails concernant le programme et les volumes 
 <ul>
 <li> "Maths2:algèbre": logique, théorie naïve des ensembles, applications, injectivité, surjectivité, bijectivité, dénombrabilité et relations. </li>
 <li> "Maths6:arithmétique": division euclidienne, arithmétique modulaire, une introduction à la théorie des groupes, théorème de Bézout et de Gauss, résolution de système de congruences.</li>
-</ul> "" et . </p>
+</ul> </p>
 
 	<h2 id="echecs"> Loisirs échiquéens </h2>
-	<p>Je suis bénévole au club d'échecs de Calais (depuis 15 ans bientôt !), nommé <a href="http://calaispassionechecs.fr/" target="_blank"> Calais Passion échecs</a>, et je donne quelques cours auprès des joueurs confirmés du club le samedi de 14h à 15h. <br>
+	<p>Je suis bénévole au club d'échecs de Calais (depuis 17 ans bientôt !), nommé <a href="http://calaispassionechecs.fr/" target="_blank"> Calais Passion échecs</a>, et je donne quelques cours auprès des joueurs confirmés du club le samedi de 14h à 15h. <br>
 Voici ci-dessous quelques échantillons de cours que j'ai préparé à cette occasion. Je laisse cela à disposition pour toute personne souhaitant s'entraîner ou souhaitant enseigner cette matière échiquéenne. Voici quelques cours de finales:
 <ol>
 <li> <a href="https://lichess.org/study/GSpzQl4P target="_blank"> La règle du carré </a></li>
