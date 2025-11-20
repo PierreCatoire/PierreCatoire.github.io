@@ -2,42 +2,139 @@
 <html lang=fr>
 	<head>
 	<meta charset="utf_8">
+
+<! -- Titre  -->
 	<title> 
+
 	Pierre Catoire 
 	</title>
+	
+
+<! -- Feuille de style en css -->
+	<style type="text/css">
+  	body {
+	padding-left: 11em;
+    	color: black	;
+    	background-color: white}
+	h1 {
+    		font-family: Helvetica, Geneva, Arial,
+          	SunSans-Regular, sans-serif }
+	h2 {
+    		font-family: Helvetica, Geneva, Arial,
+          	SunSans-Regular, sans-serif }
+	h3 {
+    		font-family: Helvetica, Geneva, Arial,
+          	SunSans-Regular, sans-serif }
+
+	ul.navbar {
+	list-style-type: none;
+    		padding: 0;
+    		margin: 0;
+    		position: absolute;
+    		top: 2em;
+    		left: 1em;
+    		width: 9em }
+	ul.navbar li {
+    		background: white;
+    		margin: 0.5em 0;
+    		padding: 0.3em;
+    		border-right: 1em solid black }
+  		ul.navbar a {
+    		text-decoration: none }
+  		a:link {
+    		color: blue }
+  		a:visited {
+    		color: purple }
+	address {
+    		margin-top: 1em;
+    		padding-top: 1em;
+    		border-top: thin dotted }
+  	</style>
+	
 	</head>
 	<body>
-	<h1> Page personnelle de Pierre Catoire </h1>
-	<p> Bienvenue sur ma page personnelle.  </p>
-	<p> Je suis actuellement ATER à l'université d'Artois et j'enseigne en BUT informatique à l'IUT de Lens. J'ai une thèse de doctorat en <em>mathématiques</em> effectuée à l'<a href="https://www.univ-littoral.fr/" target="_blank">Université du Littoral Côte d'Opale </a> au <a href="https://lmpa.univ-littoral.fr/">laboratoire de mathématiques pures et appliquées Joseph Liouville</a>.<br> J'enseigne en première année de licence.<br>
-	J'ai obtenu l'agrégation de mathématiques en 2020.<br>
-	Je suis également joueur d'<em>échecs</em> amateurs dans des opens et lors de matchs de compétitions nationale avec le club de Calais.<br> 
-	Voici un <a href="#echecs">lien </a> pour aller directement à la partie échiquéenne.<br>
-	Pour les étudiants suivre le <a href="#enseignement">lien</a> suivant. 
+
+<! -- Barre de navigation -->
+<ul class="navbar"> 
+<li> <a href="#Accueil"> Accueil </a></li>
+<li> <a href="#Recherche"> Recherche </a></li>
+<li> <a href="#enseignement"> Enseignement </a> </li>
+<li> <a href="#echecs"> Documents échiquéens</a> </li>
+<li> <a href="index.html"> In french </a> </li> 
+</ul>
+
+
+
+<h1 id="Accueil"> Pierre Catoire </h1>
+	<p><img src="Photo.png" alt="Pierre Catoire" style="height:200px; width:150px; float:right"></p>
+	<p> Welcome on my web page, you can find fresh news about me here !  </p>
+	<p> I am currently, a non-tenured searcher at université de Montpellier, in the south of France et I am teaching at the maths department. I am a searcher hosted at<a href="https://imag.umontpellier.fr/">Institut Montpeliérain Alexander Grothendieck </a>.
+<br>
+I passed a PhD in <em>mathematics</em> at <a href="https://www.univ-littoral.fr/" target="_blank">Université du Littoral Côte d'Opale </a>  in <a href="https://lmpa.univ-littoral.fr/">laboratoire de mathématiques pures et appliquées Joseph Liouville</a> math lab.<br> 
+	<br>
+	I am also a <em>chess</em> player. So could have met me during one ! 
+	Students may follow the link <a href="#enseignement">lien</a> for documents for lessons. 
+
+If you wish to write to me to talk about mathematics, you can email me at: catoire_research@proton.me
+Mails won't be lost here !
 	  </p>
-	<p> Vous pouvez télécharger mon CV <a href="CVaca.pdf" target="_blank">ici.</a> </p>
-	<h2> Activités de recherche mathématiques </h2>
+	<p> You can download my english CV <a href="CVaca_eng.pdf" target="_blank">here.</a> </p>
+	<h2 id="Recherche"> Research works in mathematics </h2>
 	<p>
-	Mes travaux de recherche en mathématiques portent sur l'algèbre combinatoire à l'intersection de la combinatoire et de l'algèbre. <br> 
-	Plus précisément, je travaille sur les <em>algèbres de Hopf combinatoire</em> et leurs éventuelles applications dans d'autres domaines des mathématiques.
+	My research works are about combinatorial algebra at the intersection between mathematics and computer science 
+	<br> 
+	
+	More precisely, I am working on <em>combinatorial Hopf algebras</em> and their applications in other fields of matheamtics like number theory, differential geometry, renormalisation theory in quantum physics or free probability theory.
+<br>
+Usually, I am trying to do mathematics with motivations or practical applications from other fields. This produces beautiful results. But, for sure, theory is also really important !
+
 	</p>
-	<h3> Thèmes de recherches </h3>
-	Les thèmes qui m'intéressent sont: les algèbres de Hopf combinatoires dont les algèbres Post-Hopf et des objets combinatoires tels que les graphes, les arbres, les matroïdes, les mots...
+	<h3> Research interests </h3>
+	
+	My research work is about combinatorial Hopf algebras, Post-Hopf algebras, tridendriform algebras, operad theory and the study of some combinatorial objects likre trees, parking functions, words or matroids...
+	
+<br>
+Moreover, I also enjoy to look some specific combinatorial issues. Currently, I want to spend some time to the study of the <a href="https://en.wikipedia.org/wiki/Cycle_double_cover"> cycle double cover conjecture </a>.
 	<h3> Publications </h3>
-	Voici, jusqu'à ce jour la liste des documents disponible en lign sur Hal et ArXiV:
-	<h4> Publiés </h4>
+	Here is a link to my PhD thesis (in french infortunately as I did not have time to type a translation)entitled <a href="https://theses.fr/2024DUNK0716" target="_blank">"Algebraic context for combinatorial Hopf algebras applications"</a>.
+In this document, I am studying many different Hopf algebras appearing in other domains of mathematics:
+<ol>
+<li> the free tridendriform algebras described by Schroeder trees; </li>
+<li> double bialgebra structure for matrices and matroids;</li>
+<li> Post-Hopf algebras appearing in differential geometry.</li>
+</ol>
+<br>
+Until now, I am detailling the list of documents available on ArXiV:
+	<h4> Published in a peer-reviewed journal </h4>
 	<ul> 
 	<li> <a href="https://hal.science/hal-03716167v2" target="_blank"> Tridendriform structures </a> </li> disponible dans le journal SIGMA depuis 2023 sous le <a href="https://www.emis.de/journals/SIGMA/2023/066/" target="_blank">lien</a>.</li>
 	 </ul>
-	<h4> En ligne </h4>
+	<h4> Online </h4>
 	 <ul>
-	<li> <a href="https://hal.science/hal-04397206v1" target="_blank">The Cartier-Quillen-Milnor-Moore theorem in the Post-Hopf case</a> disponible depuis 2024.</li> 
+	 <li> <a href="https://arxiv.org/abs/2508.19863" target="_blank"> Tridendriform and dendriform Zeta Values from Schroeder trees</li> (joint work with Pierre Clavier and Douglas Modesto da Fraga Candido).
+	<li> <a href="https://hal.science/hal-04397206v1" target="_blank">The Cartier-Quillen-Milnor-Moore theorem in the Post-Hopf case</a>.</li> 
 	</ul>
-	<h2 id=enseignement> Enseignement </h2>
-	<p> J'enseigne à l'université du Littoral Côte d'Opale les deux cours "Maths2:algèbre" et "Maths6:arithmétique". </p>
-	<h2 id="echecs"> Loisirs échiquéens </h2>
-	<p>Je suis bénévole au club d'échecs de Calais, nommé <a href="http://calaispassionechecs.fr/" target="_blank"> Calais Passion échecs </a>, et je donne quelques cours auprès des joueurs confirmés du club le samedi de 14h à 15h. <br>
-	Voici un <a href="https://ratings.fide.com/profile/36024155/statistics" target="_blank">lien</a> vers ma page FIDE pour les curieux.
-	</p>
-	</body>
-</html>
+
+<h4> Ongoing projects </h4>
+I am now working on:
+<ul>
+<li>
+ a free tridendriform structure on the set of parking functions with Bérénice Delcroix-Oger at <a="https://imag.umontpellier.fr/" target="_blank">IMAG </a>.
+</li>
+<li> practical computations in free tridendriform algebras with a computer. I am working with Jean Fromentin on this project at the maths laboratory of université du littoral côte d'opale. </li>
+<li> on the algebraic notions in numerical integration and in the context of differential geometry with Léopold Trémant at <a href="http://lml.univ-artois.fr/public/index.html" target="_blank">laboratoire de mathématiques de Lens </a> and Abrien Busnot-Laurent at <a href="https://irmar.univ-rennes.fr/" target="_blank">IRMAR</a>. </li>
+<li> other subjects still opened in my thesis about Post-Hopf algebras and the double bialgebra structure for matroids.. </li>
+</ul>
+
+	<h2 id=enseignement> Teaching </h2>
+	<p> I am currently teaching at the maths departement at Université de Monptellier for 192h this year.
+	Last year, I was teaching in a computer science department for 192h/year at IUT de Lens to student in first and second year. I have made many practical works files either with the help of Léopold Trémant. If you want to get those files (in french) go to the <a href="index.html" target="_blank">french webpage</a>.
+	During my PhD, I have taught 2 years for 64h/year two courses called:
+<ul>
+<li> "Maths2:algebra": logic, naive set theory, maps, injectivity, surjectivity, bijectivity, countable sets and relations.</li>
+<li> "Maths6:arithmetic": euclidian division, modular arithmetic, introduction to group theory, Bezout and Gauss theorem, division euclidienne, arithmétique modulaire, une introduction à la théorie des groupes, théorème de Bézout et de Gauss, solving equations systems with moduli.</li>
+</ul> 	
+	To summarize, I have mainly taught to students doing either computer science studies or maths studies in different courses like: arithmetic, basic programation, machine learning, analysis with series, arithmetic and cryptography, basic statistics and set theory. 
+	<p> J'ai enseigné à l'université du Littoral Côte d'Opale en 2023 et 2024 aux premières années de licence en mathématiques et informatique les deux cours suivants:
+</p>
+
